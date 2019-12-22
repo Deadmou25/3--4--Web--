@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Блочная верстка</title>
+	<link rel="stylesheet" href="main.css">
+	<script>
+
+     function change_color(obj)
+
+     {
+
+       obj.value && (document.body.style.backgroundColor = obj.value);
+
+       obj.src && (document.body.style.backgroundImage = 'url('+obj.src+')');
+
+     }
+
+  </script>
+
+	
+
+
+</head>
+<body>
+	<form method="post" action="1.php" onsubmit="return false">
+
+    <button class="color" id="red" name="button" value="red" onclick='change_color(this)'>red</button>
+
+    <button class="color" id="orange" name="button" value="orange" onclick='change_color(this)'>orange</button>
+
+    <!-- <img src="http://javascript.ru/forum/images/ca_serenity/misc/logo.gif" alt="" onclick='change_color(this)'>
+
+    <img src="http://javascript.ru/forum/images/smilies/victory.gif" alt="" onclick='change_color(this)'> -->
+
+</form>
+
+	<div class="header">
+		<h1>ПАО «Газпром»</h1>
+	</div>
+	<div class="sidebar">
+	<h4>Меню:</h4>
+		<ul>
+			<li><a href="#">Главная</a></li>
+			<li><a href="Услуги.html">Услуги</a></li>
+			<li><a href="Контакты.html">Контакты</a></li>
+		</ul>
+	</div>
+	<div class="sidebar1">
+		<h4>Новости</h4>
+		<p>В настоящее время «Газпром» завершает строительство межпоселковых газопроводов к с. Купанскому Переславского района и к с. Курба и д. Иванищево Ярославского района.
+
+		Продолжается сооружение газопровода к д. Итларь, с. Караш, д. 		Коленово с отводами на п. Хмельники и санаторий «Итларь» в Ростовском районе.</p>
+	</div>
+	<div class="container">
+		<p>ПАО «Газпром» — глобальная энергетическая компания. Основные направления деятельности — геологоразведка, добыча, транспортировка, хранение, переработка и реализация газа, газового конденсата и нефти, реализация газа в качестве моторного топлива, а также производство и сбыт тепло- и электроэнергии.
+
+		«Газпром» видит свою миссию в надежном, эффективном и 		сбалансированном обеспечении потребителей природным газом, другими видами энергоресурсов и продуктами их переработки.</p>
+	</div>
+	<div class="footer"> &copy; Все права защищены.
+		
+	</div>	
+</body>
+</html>
